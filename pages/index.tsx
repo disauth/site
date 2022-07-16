@@ -19,11 +19,11 @@ const Home: NextPage = () => {
       <main>
         <Header />
         <section className="w-screen h-screen flex flex-col justify-center items-center bg-slate-900 text-slate-50">
-          <div className="font-bold text-8xl text-center">
+          <div className="font-bold text-5xl md:text-6xl lg:text-8xl text-center">
             <h1>The authentication</h1>
             <h1>for <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">developers</span></h1>
           </div>
-          <p className="text-xl my-8 text-slate-400">
+          <p className="text-xl my-8 text-slate-400 text-center">
             The infinitely-compatible serverless authentication platform.
           </p>
           <div className="flex gap-4">
@@ -37,10 +37,10 @@ const Home: NextPage = () => {
             </a>
           </div>
         </section>
-        <section id="pricing" className="w-screen h-screen flex flex-col justify-center items-center bg-slate-900 text-slate-50">
-          <h1 className="text-5xl text-center my-8">Transparent pricing you can understand</h1>
-          <div className="w-full px-8 text-center gap-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-            <div className="w-full p-4 bg-slate-800 rounded-lg h-full flex flex-col gap-1">
+        <section id="pricing" className="w-screen min-h-screen flex flex-col justify-center items-center bg-slate-900 text-slate-50">
+          <h1 className="text-center my-8 text-3xl md:text-4xl lg:text-5xl">Transparent pricing you can understand</h1>
+          <div className="w-full px-8 text-center gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="w-full p-4 bg-slate-800 rounded-lg flex flex-col gap-1">
               <div className="border-b border-slate-400 h-32">
                 <h2 className="text-2xl">Hobby</h2>
                 <p className="text-slate-400">One environment per organization</p>
@@ -59,7 +59,7 @@ const Home: NextPage = () => {
                 <BiLastPage className="text-pink-500 text-xl"/>
               </a>
             </div>
-            <div className="w-full p-4 bg-slate-800 rounded-lg h-full flex flex-col gap-1">
+            <div className="w-full p-4 bg-slate-800 rounded-lg flex flex-col gap-1">
               <div className="border-b border-slate-400 h-32">
                 <h2 className="text-2xl text-pink-500">Startup</h2>
                 <p className="text-slate-400">Small teams needing more users</p>
@@ -85,7 +85,7 @@ const Home: NextPage = () => {
                 <BiLastPage className="text-pink-500 text-xl"/>
               </a>
             </div>
-            <div className="w-full p-4 bg-slate-800 rounded-lg h-full flex flex-col gap-1">
+            <div className="w-full p-4 bg-slate-800 rounded-lg flex flex-col gap-1">
               <div className="border-b border-slate-400 h-32">
                 <h2 className="text-2xl text-red-500">Team</h2>
                 <p className="text-slate-400">Large teams needing a lot of users</p>
@@ -112,7 +112,7 @@ const Home: NextPage = () => {
                 <BiLastPage className="text-pink-500 text-xl"/>
               </a>
             </div>
-            <div className="w-full p-4 bg-slate-800 rounded-lg h-full flex flex-col gap-1">
+            <div className="w-full p-4 bg-slate-800 rounded-lg flex flex-col gap-1">
               <div className="border-b border-slate-400 h-32">
                 <h2 className="text-2xl text-yellow-500">Enterprise</h2>
                 <p className="text-slate-400">Built for scale</p>
